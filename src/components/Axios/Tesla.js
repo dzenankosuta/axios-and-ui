@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const BASE_URL = "https://newsapi.org/v2";
-const API_KEY = "9e2a4c58c6a34d309d07774c318e1282";
+const API_KEY = "81fd4bbf336f401099b0e0674e182f75";
 
 const Tesla = () => {
   const [articles, setArticles] = useState([]);
