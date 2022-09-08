@@ -1,11 +1,11 @@
-import { Card } from "@nextui-org/react";
 import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import { Grid } from "@nextui-org/react";
-import { Card5 } from "./components/Card/Card5";
+import Card5 from "./components/Card/Card5";
+import Paginate from "./components/Pagination/Paginate";
 
-export default function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -24,6 +24,9 @@ export default function App() {
         </Grid>
         <Grid xs={12} sm={4}></Grid>
       </Grid.Container>
+      <Paginate />
     </>
   );
-}
+};
+
+export default App;

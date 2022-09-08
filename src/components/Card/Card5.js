@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
-export const Card5 = () => (
+const Card5 = () => (
   <Card css={{ w: "100%", h: "400px" }}>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
       <Col>
@@ -77,3 +77,5 @@ export const Card5 = () => (
     </Card.Footer>
   </Card>
 );
+
+export default Card5;
