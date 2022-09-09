@@ -13,21 +13,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <Grid.Container gap={2}>
+      {/* <Grid.Container gap={2}>
         <Grid xs={12} sm={4}>
           <Card5 />
         </Grid>
-        <Grid xs={12} sm={4}>
-          <Card5 />
-        </Grid>
-        <Grid xs={12} sm={4}>
-          <Card5 />
-        </Grid>
-        <Grid xs={12} sm={4}>
-          <Card5 />
-        </Grid>
-        <Grid xs={12} sm={4}></Grid>
-      </Grid.Container>
+      </Grid.Container> */}
       {/* <Tesla /> */}
       {/* <BusinessHeadlines /> */}
       {/* <TechCrunch /> */}

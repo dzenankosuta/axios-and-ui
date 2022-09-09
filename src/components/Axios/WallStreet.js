@@ -5,7 +5,7 @@ import { Grid } from "@nextui-org/react";
 import Card5 from "../Card/Card5";
 
 const BASE_URL = "https://newsapi.org/v2";
-const API_KEY = "81fd4bbf336f401099b0e0674e182f75";
+const API_KEY = "93e91ee5f8cf40dc8bca6a46524d509e";
 
 const WallStreet = () => {
   const [articles, setArticles] = useState([]);
@@ -28,16 +28,18 @@ const WallStreet = () => {
   }, [articles]);
   return (
     <div>
-      {articles.map((article) => (
-        <div>
-          <h2>{article.author}</h2>
-          <h4>{article.title}</h4>
-          <h5>{article.urlToImage}</h5>
-          <h5>{pagination.page}</h5>
-          <h5>{pagination.totalPages}</h5>
-          <hr />
-        </div>
-      ))}
+      <Grid.Container gap={2}>
+        {articles.map((article) => (
+          <Grid xs={12} sm={4}>
+            <Card5
+              author={article.author}
+              title={article.title}
+              urlToImage={article.urlToImage}
+            />
+          </Grid>
+        ))}
+      </Grid.Container>
+
       <Paginate
         initialPage={pagination.page}
         totalPages={pagination.totalPages}
