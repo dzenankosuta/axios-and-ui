@@ -18,8 +18,8 @@ const App = () => {
           <Card5 />
         </Grid>
       </Grid.Container> */}
-      {/* <Tesla /> */}
-      <BusinessHeadlines />
+      <Tesla />
+      {/* <BusinessHeadlines /> */}
       {/* <TechCrunch /> */}
       {/* <WallStreet /> */}
     </>

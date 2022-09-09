@@ -28,16 +28,17 @@ const Tesla = () => {
   }, [articles]);
   return (
     <div>
-      {articles.map((article) => (
-        <div>
-          <h2>{article.author}</h2>
-          <h4>{article.title}</h4>
-          <h5>{article.urlToImage}</h5>
-          <h5>{pagination.page}</h5>
-          <h5>{pagination.totalPages}</h5>
-          <hr />
-        </div>
-      ))}
+      <Grid.Container gap={2}>
+        {articles.map((article) => (
+          <Grid xs={12} sm={4}>
+            <Card5
+              author={article.author}
+              title={article.title}
+              urlToImage={article.urlToImage}
+            />
+          </Grid>
+        ))}
+      </Grid.Container>
       <Paginate
         initialPage={pagination.page}
         totalPages={pagination.totalPages}
