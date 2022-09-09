@@ -7,6 +7,7 @@ import Paginate from "./components/Pagination/Paginate";
 import Tesla from "./components/Axios/Tesla";
 import BusinessHeadlines from "./components/Axios/BusinessHeadlines";
 import TechCrunch from "./components/Axios/TechCrunch";
+import WallStreet from "./components/Axios/WallStreet";
 
 const App = () => {
   return (
@@ -29,7 +30,8 @@ const App = () => {
       </Grid.Container>
       {/* <Tesla /> */}
       {/* <BusinessHeadlines /> */}
-      <TechCrunch />
+      {/* <TechCrunch /> */}
+      <WallStreet />
     </>
   );
 };
