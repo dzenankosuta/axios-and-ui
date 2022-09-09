@@ -7,13 +7,13 @@ import Card5 from "../Card/Card5";
 const BASE_URL = "https://newsapi.org/v2";
 const API_KEY = "81fd4bbf336f401099b0e0674e182f75";
 
-const Tesla = () => {
+const TechCrunch = () => {
   const [articles, setArticles] = useState([]);
   const [pagination, setPagination] = useState({});
   function getArticles(page) {
     axios
       .get(
-        `${BASE_URL}/everything?q=tesla&from=2022-08-09&sortBy=publishedAt&pageSize=12&page=${page}&apiKey=${API_KEY}`
+        `${BASE_URL}/top-headlines?sources=techcrunch&pageSize=12&page=${page}&apiKey=${API_KEY}`
       )
       .then((res) => {
         setPagination({
@@ -46,4 +46,4 @@ const Tesla = () => {
   );
 };
 
-export default Tesla;
+export default TechCrunch;

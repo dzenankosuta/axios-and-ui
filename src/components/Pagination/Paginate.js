@@ -9,7 +9,7 @@ const Paginate = ({ initialPage, totalPages }) => {
           color="primary"
           initialPage={initialPage}
           total={totalPages}
-          onPageChange={(page) => console.log({ page })}
+          // onPageChange={(page) => console.log({ page })}
           css={{ margin: "auto" }}
         />
       </Grid>
