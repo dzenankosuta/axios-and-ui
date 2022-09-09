@@ -20,8 +20,8 @@ const App = () => {
       </Grid.Container> */}
       {/* <Tesla /> */}
       {/* <BusinessHeadlines /> */}
-      {/* <TechCrunch /> */}
-      <WallStreet />
+      <TechCrunch />
+      {/* <WallStreet /> */}
     </>
   );
 };
