@@ -5,6 +5,7 @@ import { Grid } from "@nextui-org/react";
 import Card5 from "./components/Card/Card5";
 import Paginate from "./components/Pagination/Paginate";
 import Tesla from "./components/Axios/Tesla";
+import BusinessHeadlines from "./components/Axios/BusinessHeadlines";
 
 const App = () => {
   return (
@@ -25,8 +26,8 @@ const App = () => {
         </Grid>
         <Grid xs={12} sm={4}></Grid>
       </Grid.Container>
-      <Tesla />
-      <Paginate />
+      {/* <Tesla /> */}
+      <BusinessHeadlines />
     </>
   );
 };
