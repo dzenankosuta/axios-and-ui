@@ -19,8 +19,8 @@ const App = () => {
         </Grid>
       </Grid.Container> */}
       {/* <Tesla /> */}
-      {/* <BusinessHeadlines /> */}
-      <TechCrunch />
+      <BusinessHeadlines />
+      {/* <TechCrunch /> */}
       {/* <WallStreet /> */}
     </>
   );
