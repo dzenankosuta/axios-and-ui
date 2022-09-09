@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Pagination, Grid, Radio } from "@nextui-org/react";
 
 const Paginate = ({ initialPage, totalPages }) => {
+  const [page, setPage] = useState();
   return (
     <Grid.Container gap={2}>
       <Grid xs={12}>
@@ -9,7 +10,9 @@ const Paginate = ({ initialPage, totalPages }) => {
           color="primary"
           initialPage={initialPage}
           total={totalPages}
-          // onPageChange={(page) => console.log({ page })}
+          onChange={() => {
+            setPage(page);
+          }}
           css={{ margin: "auto" }}
         />
       </Grid>

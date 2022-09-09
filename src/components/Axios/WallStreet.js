@@ -5,7 +5,7 @@ import { Grid } from "@nextui-org/react";
 import Card5 from "../Card/Card5";
 
 const BASE_URL = "https://newsapi.org/v2";
-const API_KEY = "12b2f0f1d20f4884bfe79061957baf4b";
+const API_KEY = "984004e456fc482e8198ad93914cd6c9";
 
 const WallStreet = () => {
   const [articles, setArticles] = useState([]);
