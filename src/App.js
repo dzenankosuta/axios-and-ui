@@ -31,15 +31,10 @@ const App = () => {
         showTechCrunch={handleTechCrunch}
         showWallStreet={handleWallStreet}
       />
-      {/* <Grid.Container gap={2}>
-        <Grid xs={12} sm={4}>
-          <Card5 />
-        </Grid>
-      </Grid.Container> */}
-      <Tesla />
-      {/* <BusinessHeadlines /> */}
-      {/* <TechCrunch /> */}
-      {/* <WallStreet /> */}
+      {show === "tesla" && <Tesla />}
+      {show === "headlines" && <BusinessHeadlines />}
+      {show === "crunch" && <TechCrunch />}
+      {show === "wallstreet" && <WallStreet />}
     </>
   );
 };
