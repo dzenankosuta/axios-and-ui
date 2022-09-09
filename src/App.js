@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import { Grid } from "@nextui-org/react";
@@ -10,9 +10,27 @@ import TechCrunch from "./components/Axios/TechCrunch";
 import WallStreet from "./components/Axios/WallStreet";
 
 const App = () => {
+  const [show, setShow] = useState("");
+  const handleTesla = () => {
+    setShow("tesla");
+  };
+  const handleBusinessHeadlines = () => {
+    setShow("headlines");
+  };
+  const handleTechCrunch = () => {
+    setShow("crunch");
+  };
+  const handleWallStreet = () => {
+    setShow("wallstreet");
+  };
   return (
     <>
-      <Header />
+      <Header
+        showTesla={handleTesla}
+        showBusinessHeadlines={handleBusinessHeadlines}
+        showTechCrunch={handleTechCrunch}
+        showWallStreet={handleWallStreet}
+      />
       {/* <Grid.Container gap={2}>
         <Grid xs={12} sm={4}>
           <Card5 />
